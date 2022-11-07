@@ -1,18 +1,17 @@
 class Conta {
     int numero;
     double saldo;
-    int status; //1-ATIVA 2-BLOQUEADA 3-CANCELADA
-    int categoria; //1-COMUM 2-ESPECIAL 3-VIP
+    int status; 
+    int categoria; 
 
-    /** Metodo construtor de <<create>*/
+    /** Construtor */
     public Conta(int numero) {
       saldo = 0;
       status = 1;
       categoria = 1;
     }
 
-    /** Metodo creditar. Credita "valor" no saldo
-     */
+    /** Creditar */
     public void creditar(double valor) {
       if (status == 1){
           saldo =  saldo + valor;
@@ -28,8 +27,7 @@ class Conta {
         saldo = saldo;
     }
 
-    /** Metodo debitar. Debita "valor" do saldo
-     */
+    /** Debitar */
       double taxa;
     public void debitar(double valor) {
      if (status == 1){
